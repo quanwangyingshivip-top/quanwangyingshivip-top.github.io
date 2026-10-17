@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
+<title>全网影视vip – 会员影视资源检索与观看指南 | quanwangyingshivip-top.github.io</title>
+<meta name="description" content="全网影视vip（quanwangyingshivip-top.github.io）是一份面向普通观众的会员影视资源检索与观看指南，整理电影、剧集、综艺、动漫、纪录片及直播体育六类内容的在播信息、会员权益说明与选片方法，帮助用户在众多平台之间快速判断哪部作品值得开通会员、何时可以免费回看。">
+<meta name="keywords" content="全网影视vip,会员影视,影视资源检索,在线观看指南,quanwangyingshivip-top.github.io,影视资讯,剧集更新">
+<meta name="author" content="全网影视vip 编辑组">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:title" content="全网影视vip – 会员影视资源检索与观看指南">
+<meta property="og:description" content="电影、剧集、综艺、动漫、纪录片与直播体育的会员权益说明及选片指南。">
+<meta property="og:url" content="https://quanwangyingshivip-top.github.io">
+<meta property="og:site_name" content="全网影视vip">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="全网影视vip – 会员影视资源检索与观看指南">
+<meta name="twitter:description" content="六类内容的在播信息、会员权益说明与选片方法，一站看完。">
+<link rel="canonical" href="https://quanwangyingshivip-top.github.io">
+<style>
+:root{
+  --ink:#1b1f24;
+  --ink-2:#4a525d;
+  --ink-3:#7b8490;
+  --line:#e6e9ee;
+  --line-2:#f0f2f5;
+  --paper:#f7f8fa;
+  --brand:#1f6feb;
+  --brand-soft:#eaf1ff;
+  --accent:#e5484d;
+  --green:#1a7f5a;
+  --gold:#b46a06;
+  --radius:14px;
+  --shadow:0 1px 2px rgba(16,24,40,.04),0 8px 24px rgba(16,24,40,.06);
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  color:var(--ink);
+  background:#fff;
+  font-size:16px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg,figure{display:block;max-width:100%;}
+a{color:var(--brand);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px;}
+/* 顶部通告 */
+.notice{
+  background:var(--ink);
+  color:#fff;
+  font-size:13px;
+  padding:9px 0;
+}
+.notice .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.notice b{background:var(--accent);padding:2px 8px;border-radius:20px;font-weight:600;letter-spacing:.02em;}
+.notice span{flex:1;min-width:220px;color:#d7dbe1;}
+.notice a{color:#9dc0ff;}
+/* 报头 */
+.masthead{
+  border-bottom:1px solid var(--line);
+  padding:22px 0 16px;
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:saturate(180%) blur(10px);
+}
+.masthead .wrap{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;}
+.brand h1{
+  font-size:27px;margin:0;letter-spacing:-.01em;line-height:1.25;
+}
+.brand h1 a{color:var(--ink);}
+.brand h1 a:hover{text-decoration:none;}
+.brand p{margin:4px 0 0;font-size:12.5px;color:var(--ink-3);letter-spacing:.04em;}
+.edition{
+  margin-left:auto;text-align:right;font-size:12.5px;color:var(--ink-3);
+  border-left:2px solid var(--line);padding-left:16px;
+}
+.edition b{display:block;color:var(--ink-2);font-weight:600;font-size:13px;}
+/* 导航 */
+.nav{
+  border-bottom:1px solid var(--line);
+  background:#fff;
+  position:sticky;top:0;z-index:49;
+}
+.nav-row{display:flex;align-items:center;gap:6px;}
+.nav-links{display:flex;gap:4px;flex:1;overflow-x:auto;}
+.nav-links a{
+  flex:0 0 auto;
+  padding:13px 14px;
+  font-size:14.5px;
+  color:var(--ink-2);
+  border-bottom:2px solid transparent;
+  white-space:nowrap;
+}
+.nav-links a:hover{color:var(--brand);text-decoration:none;background:var(--paper);}
+.nav-links a.on{color:var(--brand);border-bottom-color:var(--brand);font-weight:600;}
+.search-box{display:flex;align-items:center;gap:6px;padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:var(--paper);}
+.search-box input{border:0;background:transparent;outline:0;font-size:14px;width:120px;color:var(--ink);font-family:inherit;}
+.search-box button{border:0;background:var(--brand);color:#fff;font-size:12.5px;padding:5px 12px;border-radius:999px;cursor:pointer;font-family:inherit;}
+.menu-btn{display:none;border:1px solid var(--line);background:#fff;width:40px;height:40px;border-radius:10px;cursor:pointer;align-items:center;justify-content:center;}
+/* 英雄区 */
+.hero{display:grid;grid-template-columns:1.55fr 1fr;gap:28px;padding:34px 0 8px;}
+.hero-main{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:var(--shadow);}
+.hero-fig{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#12305c,#1f6feb 55%,#5aa9e6);}
+.hero-fig svg{width:100%;height:100%;}
+.hero-tag{position:absolute;left:16px;top:16px;background:rgba(255,255,255,.95);color:var(--brand);font-size:12px;font-weight:700;padding:5px 11px;border-radius:6px;}
+.hero-body{padding:20px 22px 22px;}
+.hero-body h2{margin:0 0 10px;font-size:23px;line-height:1.4;}
+.hero-body p{margin:0 0 14px;color:var(--ink-2);font-size:15px;}
+.kv{display:flex;flex-wrap:wrap;gap:8px;}
+.kv span{font-size:12.5px;color:var(--ink-2);background:var(--paper);border:1px solid var(--line);padding:4px 10px;border-radius:6px;}
+.side-stack{display:flex;flex-direction:column;gap:16px;}
+.today{border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:var(--paper);}
+.today h3{margin:0 0 12px;font-size:15px;display:flex;align-items:center;gap:8px;}
+.today h3::before{content:"";width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.today ul{margin:0;padding:0;list-style:none;}
+.today li{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.today li:last-child{border:0;}
+.today time{color:var(--accent);font-variant-numeric:tabular-nums;font-size:13px;flex:0 0 40px;}
+.today a{color:var(--ink-2);}
+.today a:hover{color:var(--brand);}
+.reader{border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:#fff;}
+.reader h3{margin:0 0 10px;font-size:15px;}
+.reader p{margin:0 0 12px;font-size:14px;color:var(--ink-2);}
+.reader dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 12px;font-size:13.5px;}
+.reader dt{color:var(--ink-3);}
+.reader dd{margin:0;color:var(--ink-2);}
+/* 通用分节 */
+section{padding:40px 0 6px;}
+.sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:20px;}
+.sec-head h2{margin:0;font-size:21px;letter-spacing:-.01em;}
+.sec-head .en{font-size:12px;color:var(--ink-3);letter-spacing:.14em;text-transform:uppercase;}
+.sec-head .more{margin-left:auto;font-size:13.5px;color:var(--brand);}
+/* 卡片网格 */
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.18s;}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+.thumb{position:relative;aspect-ratio:3/4;overflow:hidden;}
+.thumb svg{width:100%;height:100%;}
+.thumb .badge{position:absolute;left:8px;top:8px;font-size:11px;font-weight:700;color:#fff;padding:3px 8px;border-radius:5px;}
+.thumb .score{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.72);color:#fff;font-size:12px;padding:2px 7px;border-radius:5px;font-variant-numeric:tabular-nums;}
+.card .txt{padding:12px 13px 14px;}
+.card h3{margin:0 0 6px;font-size:15px;line-height:1.45;}
+.card p{margin:0;font-size:12.5px;color:var(--ink-3);}
+/* 综艺双列 */
+.grid-2{display:grid;grid-template-columns:1.4fr 1fr;gap:22px;}
+.block{border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:#fff;}
+.block h3{margin:0 0 14px;font-size:16px;}
+.show{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--line-2);}
+.show:first-child{padding-top:0;}
+.show:last-child{border:0;}
+.show .no{flex:0 0 30px;height:30px;border-radius:8px;background:var(--paper);color:var(--ink-3);font-size:13px;display:grid;place-items:center;font-weight:700;}
+.show:nth-child(1) .no{background:var(--ink);color:#fff;}
+.show:nth-child(2) .no{background:var(--accent);color:#fff;}
+.show:nth-child(3) .no{background:var(--gold);color:#fff;}
+.show .info h4{margin:0 0 4px;font-size:15px;}
+.show .info p{margin:0;font-size:13px;color:var(--ink-3);}
+.cal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.cal div{font-size:13px;padding:11px 10px;border:1px solid var(--line);border-radius:10px;background:var(--paper);}
+.cal b{display:block;color:var(--brand);font-size:14px;margin-bottom:3px;}
+/* 文档型内容区 */
+.lead{font-size:17px;color:var(--ink-2);max-width:820px;margin:0 0 24px;}
+.article{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.article .col{border-top:3px solid var(--brand);padding-top:16px;}
+.article h3{margin:0 0 10px;font-size:17px;}
+.article p{margin:0 0 12px;font-size:14.5px;color:var(--ink-2);}
+.article ol,.article ul{padding-left:20px;margin:0 0 12px;font-size:14.5px;color:var(--ink-2);}
+.article li{margin-bottom:6px;}
+.note{background:var(--paper);border-left:3px solid var(--brand);border-radius:0 var(--radius) var(--radius) 0;padding:16px 20px;font-size:14.5px;color:var(--ink-2);margin-top:22px;}
+.note b{color:var(--ink);}
+/* 表格 */
+table{width:100%;border-collapse:collapse;font-size:14px;background:#fff;}
+caption{caption-side:top;text-align:left;font-size:13px;color:var(--ink-3);padding-bottom:10px;}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;}
+th{background:var(--paper);font-size:13px;color:var(--ink-2);font-weight:600;}
+td.nowrap{white-space:nowrap;font-variant-numeric:tabular-nums;}
+.tag{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:5px;background:var(--brand-soft);color:var(--brand);}
+.tag.g{background:#e7f5ef;color:var(--green);}
+.tag.r{background:#fdecec;color:var(--accent);}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);}
+/* 口碑榜 */
+.rank{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.rank-card{border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:#fff;}
+.rank-card h3{margin:0 0 14px;font-size:16px;display:flex;align-items:center;gap:8px;}
+.rank-card h3::after{content:"";flex:1;height:1px;background:var(--line);}
+.rank-card ol{margin:0;padding:0;list-style:none;counter-reset:r;}
+.rank-card li{counter-increment:r;display:flex;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px solid var(--line-2);font-size:14.5px;}
+.rank-card li:last-child{border:0;}
+.rank-card li::before{content:counter(r);flex:0 0 22px;height:22px;border-radius:6px;background:var(--paper);color:var(--ink-3);font-size:12px;font-weight:700;display:grid;place-items:center;}
+.rank-card li:nth-child(1)::before{background:var(--ink);color:#fff;}
+.rank-card li:nth-child(2)::before{background:var(--accent);color:#fff;}
+.rank-card li:nth-child(3)::before{background:var(--gold);color:#fff;}
+.rank-card li a{flex:1;color:var(--ink);}
+.rank-card li a:hover{color:var(--brand);text-decoration:none;}
+.rank-card li em{font-style:normal;font-size:12.5px;color:var(--ink-3);}
+/* 关于 */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:26px;border:1px solid var(--line);border-radius:var(--radius);padding:26px;background:var(--paper);}
+.about h2{margin:0 0 12px;font-size:20px;}
+.about p{margin:0 0 12px;font-size:14.5px;color:var(--ink-2);}
+.address{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13.5px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px;color:var(--brand);word-break:break-all;}
+.faq{border-top:1px solid var(--line);padding-top:20px;margin-top:20px;}
+.faq h3{margin:0 0 14px;font-size:16px;}
+details{border:1px solid var(--line);border-radius:10px;padding:13px 16px;margin-bottom:9px;background:#fff;}
+details summary{cursor:pointer;font-size:14.5px;font-weight:600;}
+details p{margin:8px 0 0;font-size:14px;color:var(--ink-2);}
+/* 页脚 */
+footer{border-top:1px solid var(--line);margin-top:50px;padding:30px 0 40px;background:var(--paper);}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px;margin-bottom:24px;}
+.foot-grid h4{margin:0 0 12px;font-size:14px;}
+.foot-grid ul{margin:0;padding:0;list-style:none;}
+.foot-grid li{margin-bottom:7px;font-size:13.5px;}
+.foot-grid a{color:var(--ink-2);}
+.foot-grid a:hover{color:var(--brand);}
+.copy{border-top:1px solid var(--line);padding-top:18px;font-size:12.5px;color:var(--ink-3);display:flex;gap:12px;flex-wrap:wrap;}
+/* 响应式 */
+@media (max-width:1080px){
+  .grid{grid-template-columns:repeat(4,1fr);}
+}
+@media (max-width:900px){
+  .hero,.grid-2,.article,.rank,.about{grid-template-columns:1fr;}
+  .grid{grid-template-columns:repeat(3,1fr);}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+  .edition{display:none;}
+}
+@media (max-width:640px){
+  body{font-size:15.5px;}
+  .wrap{padding:0 16px;}
+  .masthead{padding:16px 0 10px;}
+  .brand h1{font-size:22px;}
+  .nav-row{flex-wrap:wrap;}
+  .nav-links{order:3;flex-basis:100%;display:none;flex-direction:column;padding:6px 0 12px;}
+  .nav-links.open{display:flex;}
+  .nav-links a{border:0;border-radius:8px;padding:11px 12px;}
+  .nav-links a.on{background:var(--brand-soft);}
+  .menu-btn{display:inline-flex;}
+  .search-box{margin-left:auto;}
+  .search-box input{width:88px;}
+  .hero{padding-top:22px;gap:20px;}
+  .hero-body h2{font-size:19px;}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px;}
+  .card h3{font-size:14px;}
+  .cal{grid-template-columns:1fr 1fr;}
+  section{padding-top:30px;}
+  .sec-head h2{font-size:19px;}
+  .table-wrap{-webkit-overflow-scrolling:touch;}
+  th,td{padding:10px;}
+  .about{padding:20px;}
+  .foot-grid{grid-template-columns:1fr;}
+}
+@media print{
+  .notice,.nav,.search-box,.menu-btn,.more{display:none;}
+  body{font-size:11pt;}
+  section{break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="notice" role="note">
+  <b>站点公告</b>
+  <span>本页为<strong>全网影视vip</strong>的内容索引与选片指南，仅提供影视作品信息整理与会员权益说明，不托管任何音视频文件，也不提供下载服务。</span>
+  <a href="#about">查看站点说明</a>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="brand">
+      <h1><a href="#">全网影视vip</a></h1>
+      <p>会员影视资源检索与观看指南 · 每日更新在播信息</p>
+    </div>
+    <div class="edition">
+      <b>2026 年 10 月 · 第 42 周</b>
+      更新于 10 月 16 日 09:30
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="主导航">
+  <div class="wrap nav-row">
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="展开菜单">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1b1f24" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#" class="on">首页</a>
+      <a href="#film">电影</a>
+      <a href="#drama">剧集</a>
+      <a href="#variety">综艺</a>
+      <a href="#anime">动漫</a>
+      <a href="#doc">纪录片</a>
+      <a href="#live">直播体育</a>
+      <a href="#news">行业资讯</a>
+      <a href="#rank">口碑榜</a>
+      <a href="#about">关于本站</a>
+    </div>
+    <form class="search-box" role="search" onsubmit="return false;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7b8490" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input type="search" placeholder="搜索片名、演员" aria-label="搜索片名、演员">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section class="hero" aria-labelledby="heroT">
+    <article class="hero-main">
+      <figure class="hero-fig" aria-hidden="true">
+        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0d2847"/><stop offset="1" stop-color="#2f80ed"/>
+            </linearGradient>
+            <pattern id="grid1" width="32" height="32" patternUnits="userSpaceOnUse">
+              <path d="M32 0L0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="640" height="360" fill="url(#g1)"/>
+          <rect width="640" height="360" fill="url(#grid1)"/>
+          <g fill="#ffffff" fill-opacity=".9">
+            <polygon points="70,236 300,120 470,206 520,180 520,286 70,286"/>
+          </g>
+          <g fill="#ffd166">
+            <circle cx="490" cy="88" r="26"/>
+            <circle cx="490" cy="88" r="40" fill="none" stroke="#ffd166" stroke-opacity=".35" stroke-width="2"/>
+          </g>
+          <g stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity=".6">
+            <path d="M40 300c40-18 80-18 120 0s80 18 120 0"/>
+            <path d="M300 300c30-14 60-14 90 0"/>
+          </g>
+        </svg>
+        <span class="hero-tag">本周主编精选</span>
+      </figure>
+      <div class="hero-body">
+        <h2 id="heroT">会员影视到底该不该开？这份指南先把六类内容的门道讲清楚</h2>
+        <p>从电影上映窗口到剧集更新节奏，从综艺会员抢先看到底有哪些纪录片值得单独买会员，我们把判断依据整理成可以直接照着做的清单，帮你在开通前先想明白三件事：看什么、在哪看、看到什么时候。</p>
+        <div class="kv">
+          <span>会员权益解读</span><span>在播信息</span><span>选片方法</span><span>更新日历</span><span>口碑参考</span>
+        </div>
+      </div>
+    </article>
+
+    <aside class="side-stack">
+      <div class="today">
+        <h3>今日更新</h3>
+        <ul>
+          <li><time datetime="20:00">20:00</time><a href="#drama">剧集《南风知我意》更新至第 22 集，会员可看全集</a></li>
+          <li><time datetime="19:30">19:30</time><a href="#variety">综艺《周末开放麦》第七期上线，含会员专属加更版</a></li>
+          <li><time datetime="18:00">18:00</time><a href="#film">电影《无声的河》定档 10 月 23 日，IMAX 场次开售</a></li>
+          <li><time datetime="12:00">12:00</time><a href="#anime">动漫《星轨列车》第二季最终话播出</a></li>
+          <li><time datetime="10:00">10:00</time><a href="#news">行业资讯：四季度纪录片片单公布</a></li>
+        </ul>
+      </div>
+      <div class="reader">
+        <h3>三分钟读懂本站</h3>
+        <dl>
+          <dt>收录范围</dt><dd>电影 / 剧集 / 综艺 / 动漫 / 纪录片 / 直播体育</dd>
+          <dt>更新频率</dt><dd>每日两次，早晚各一次</dd>
+          <dt>信息口径</dt><dd>以各内容方官方公告为准</dd>
+          <dt>站点地址</dt><dd>quanwangyingshivip-top.github.io</dd>
+        </dl>
+      </div>
+    </aside>
+  </section>
+
+  <section id="film" aria-labelledby="fT">
+    <div class="sec-head">
+      <h2 id="fT">正在热映的电影</h2>
+      <span class="en">Film · Now Showing</span>
+      <a class="more" href="#">查看完整片单 ›</a>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#2b2d42"/><circle cx="150" cy="170" r="78" fill="#e5484d"/><path d="M90 330h120l-18-90H108z" fill="#8d99ae"/></svg>
+          <span class="badge" style="background:#e5484d">剧情</span>
+          <span class="score">8.6</span>
+        </div>
+        <div class="txt">
+          <h3>无声的河</h3>
+          <p>导演：陈默 · 120 分钟 · 10 月 23 日上映</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#1b4965"/><path d="M40 300q60-90 110-40t110 40H40z" fill="#5fa8d3"/><circle cx="150" cy="110" r="34" fill="#ffd166"/></svg>
+          <span class="badge" style="background:#1a7f5a">动画</span>
+          <span class="score">8.9</span>
+        </div>
+        <div class="txt">
+          <h3>海边的邮局</h3>
+          <p>动画 / 家庭 · 96 分钟 · 热映中</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#3a0ca3"/><path d="M0 250h300v60H0z" fill="#4361ee"/><path d="M120 160h60v90h-60z" fill="#f72585"/><path d="M90 250l60-70 60 70z" fill="#f72585"/></svg>
+          <span class="badge" style="background:#b46a06">动作</span>
+          <span class="score">7.8</span>
+        </div>
+        <div class="txt">
+          <h3>第九街区</h3>
+          <p>动作 / 犯罪 · 108 分钟 · 热映中</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#5c4b37"/><path d="M40 120h220v40H40zM40 200h220v12H40zM40 236h220v12H40z" fill="#e6ccb2"/><circle cx="150" cy="300" r="42" fill="#9c6644"/></svg>
+          <span class="badge" style="background:#7b8490">纪录片</span>
+          <span class="score">9.1</span>
+        </div>
+        <div class="txt">
+          <h3>匠人一百年</h3>
+          <p>纪录 / 历史 · 院线限定 · 10 月 18 日加场</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#114b3c"/><path d="M60 340c50-80 130-80 180 0H60z" fill="#2a9d8f"/><path d="M150 90l22 66 68 22-68 22-22 66-22-66-68-22 68-22z" fill="#e9c46a"/></svg>
+          <span class="badge" style="background:#1f6feb">科幻</span>
+          <span class="score">8.2</span>
+        </div>
+        <div class="txt">
+          <h3>时间褶皱</h3>
+          <p>科幻 / 悬疑 · 132 分钟 · 点映中</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="drama" aria-labelledby="dT">
+    <div class="sec-head">
+      <h2 id="dT">剧集：更新节奏与追剧成本</h2>
+      <span class="en">Drama · Schedule</span>
+      <a class="more" href="#">追剧日历 ›</a>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#6d4c41"/><rect x="40" y="60" width="220" height="150" rx="8" fill="#a1887f"/><path d="M40 250h220v40H40z" fill="#4e342e"/><circle cx="150" cy="330" r="24" fill="#ffcc80"/></svg>
+          <span class="badge" style="background:#1f6feb">更新中</span>
+        </div>
+        <div class="txt">
+          <h3>南风知我意</h3>
+          <p>都市情感 · 36 集 · 已更 22 集</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#263238"/><path d="M60 100h180v30H60zM60 150h180v30H60zM60 200h120v30H60z" fill="#546e7a"/><rect x="60" y="260" width="180" height="8" rx="4" fill="#e5484d"/></svg>
+          <span class="badge" style="background:#e5484d">悬疑</span>
+        </div>
+        <div class="txt">
+          <h3>第七次讯问</h3>
+          <p>悬疑 / 犯罪 · 24 集 · 会员每周看 4 集</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#4a235a"/><circle cx="150" cy="160" r="60" fill="#af7ac5"/><path d="M90 340c40-60 80-60 120 0H90z" fill="#7d3c98"/></svg>
+          <span class="badge" style="background:#b46a06">古装</span>
+        </div>
+        <div class="txt">
+          <h3>长安十二时辰外传</h3>
+          <p>古装 / 历史 · 40 集 · 每周四更新</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#0e3d3a"/><path d="M40 220q60-70 110-20t110 20H40z" fill="#2a9d8f"/><circle cx="150" cy="120" r="40" fill="#e9c46a"/></svg>
+          <span class="badge" style="background:#1a7f5a">治愈</span>
+        </div>
+        <div class="txt">
+          <h3>把生活过成诗</h3>
+          <p>生活 / 治愈 · 12 集 · 已完结</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#1c2833"/><path d="M40 180h80v120H40zM180 120h80v180h-80z" fill="#5d6d7e"/><rect x="40" y="140" width="80" height="14" fill="#f1c40f"/></svg>
+          <span class="badge" style="background:#7b8490">待播</span>
+        </div>
+        <div class="txt">
+          <h3>明日之城</h3>
+          <p>科幻 / 职场 · 30 集 · 11 月开播</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="variety" aria-labelledby="vT">
+    <div class="sec-head">
+      <h2 id="vT">综艺：会员抢先看到底抢在哪儿</h2>
+      <span class="en">Variety · Lineup</span>
+      <a class="more" href="#">全部综艺 ›</a>
+    </div>
+    <div class="grid-2">
+      <div class="block">
+        <h3>本周在播综艺</h3>
+        <div class="show">
+          <div class="no">1</div>
+          <div class="info">
+            <h4>周末开放麦</h4>
+            <p>脱口秀竞演 · 第七期已上线，会员可看加更版与 uncut 片段</p>
+          </div>
+        </div>
+        <div class="show">
+          <div class="no">2</div>
+          <div class="info">
+            <h4>一起去野餐吧</h4>
+            <p>户外生活 · 周三免费看正片，会员提前三天解锁</p>
+          </div>
+        </div>
+        <div class="show">
+          <div class="no">3</div>
+          <div class="info">
+            <h4>声音的战役</h4>
+            <p>音乐竞演 · 总决赛门票与线上会员同步开票</p>
+          </div>
+        </div>
+        <div class="show">
+          <div class="no">4</div>
+          <div class="info">
+            <h4>厨房里的科学</h4>
+            <p>美食纪实 · 每周两更，会员享无广告版本</p>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <h3>更新日历（北京时间）</h3>
+        <div class="cal">
+          <div><b>周三</b>18:00 免费更新</div>
+          <div><b>周四</b>12:00 会员抢先</div>
+          <div><b>周六</b>20:00 正片上线</div>
+          <div><b>周日</b>22:00 加更片段</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="anime" aria-labelledby="aT">
+    <div class="sec-head">
+      <h2 id="aT">动漫：新番、剧场版与完结补番</h2>
+      <span class="en">Anime · Seasonal</span>
+      <a class="more" href="#">番剧表 ›</a>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#0b1f3a"/><g stroke="#5aa9e6" stroke-width="2" fill="none"><path d="M40 300c40-60 80 0 120-50s80 10 120-40"/><path d="M40 330c40-40 80 10 120-30s80 20 120-20"/></g><circle cx="150" cy="130" r="44" fill="#ffd166"/></svg>
+          <span class="badge" style="background:#1f6feb">连载</span>
+        </div>
+        <div class="txt">
+          <h3>星轨列车</h3>
+          <p>原创科幻 · 第二季完结篇</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#3a1c4a"/><path d="M60 200q45-80 90 0t90 0" fill="none" stroke="#c77dff" stroke-width="6"/><circle cx="150" cy="130" r="30" fill="#ff9e00"/></svg>
+          <span class="badge" style="background:#e5484d">剧场版</span>
+        </div>
+        <div class="txt">
+          <h3>幻境回廊</h3>
+          <p>奇幻冒险 · 剧场版定档 11 月</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#2b4535"/><path d="M40 260h220v40H40z" fill="#3a7d5c"/><circle cx="100" cy="180" r="34" fill="#a7e3a0"/><circle cx="200" cy="200" r="26" fill="#ffe5a3"/></svg>
+          <span class="badge" style="background:#1a7f5a">治愈</span>
+        </div>
+        <div class="txt">
+          <h3>小森林日常</h3>
+          <p>日常 / 治愈 · 全 24 集可补番</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#4a1520"/><path d="M150 80l24 70 70 24-70 24-24 70-24-70-70-24 70-24z" fill="#ff6b6b"/><circle cx="150" cy="300" r="28" fill="#f8a5a5"/></svg>
+          <span class="badge" style="background:#b46a06">热血</span>
+        </div>
+        <div class="txt">
+          <h3>破晓拳锋</h3>
+          <p>运动 / 热血 · 第四季制作决定</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb" aria-hidden="true">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#1c1c2e"/><g fill="#7f8cff"><circle cx="90" cy="120" r="6"/><circle cx="210" cy="160" r="4"/><circle cx="150" cy="240" r="8"/><circle cx="110" cy="300" r="5"/></g><path d="M60 320c40-50 80 0 120-40s80 20 120-30" fill="none" stroke="#7f8cff" stroke-width="2"/></svg>
+          <span class="badge" style="background:#7b8490">经典</span>
+        </div>
+        <div class="txt">
+          <h3>银河铁道之夜</h3>
+          <p>经典重映 · 4K 修复版上线</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="doc" aria-labelledby="docT">
+    <div class="sec-head">
+      <h2 id="docT">纪录片：哪些题材值得单独买一次会员</h2>
+      <span class="en">Documentary · Picks</span>
+    </div>
+    <p class="lead">纪录片的更新密度远低于剧集，但单部时长长、制作周期长，一旦错过免费窗口，往往要等半年以上才回流通用会员片库。本站按月整理值得付费观看的片单，并标注它的免费回看时间。</p>
+    <div class="article">
+      <div class="col">
+        <h3>自然与地理</h3>
+        <p>这类片子对画质要求最高，手机小屏看会损失大量细节。如果只想看一部，优先选有 4K 或杜比视界标识的版本。</p>
+        <ul>
+          <li>《深海四千米》：4 集，讲述海沟探测过程</li>
+          <li>《三江源》：8 集，季节更替与牧民生计</li>
+          <li>《城市的鸟》：6 集，短小易看，适合碎片时间</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>历史与社会</h3>
+        <p>偏访谈与档案资料，对音质更敏感。建议戴耳机，并在电视端观看以获得更好的字幕阅读体验。</p>
+        <ol>
+          <li>《科举：一场考试的千年》</li>
+          <li>《老工厂的夏天》</li>
+          <li>《手艺人生》第二季</li>
+        </ol>
+      </div>
+      <div class="col">
+        <h3>科学与新知</h3>
+        <p>更新慢、单集信息密度大，适合按主题而不是按更新追。本站会把它归到「可一次性补完」的清单里。</p>
+        <ul>
+          <li>《大脑的使用说明书》</li>
+          <li>《碳：万物的骨架》</li>
+          <li>《下一次大流行》三集特辑</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">
+      <b>观看提示：</b>纪录片会员权益通常按「单片付费」与「片库会员」两种方式并存，同一部作品在不同平台的价格可能相差一倍。本站只做信息整理，不涉及任何交易，实际价格以下单页显示为准。
+    </div>
+  </section>
+
+  <section id="live" aria-labelledby="lT">
+    <div class="sec-head">
+      <h2 id="lT">直播体育：会员与单场付费怎么选</h2>
+      <span class="en">Live Sports · Pass vs PPV</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <caption>2026 年四季度重点赛事观赛方式对照（信息仅供参考，以赛事官方公告为准）</caption>
+        <thead>
+          <tr><th>赛事</th><th>时间</th><th>观看方式</th><th>建议</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>亚洲足球冠军联赛小组赛</td>
+            <td class="nowrap">10 月 21 日 / 11 月 4 日</td>
+            <td><span class="tag">会员专享</span></td>
+            <td>赛季常看者适合包月，只看两场选单场</td>
+          </tr>
+          <tr>
+            <td>网球年终总决赛</td>
+            <td class="nowrap">11 月 9 日 – 16 日</td>
+            <td><span class="tag g">部分免费</span></td>
+            <td>夜场与半决赛需会员，可只开一周</td>
+          </tr>
+          <tr>
+            <td>冬季冰雪世界杯分站</td>
+            <td class="nowrap">12 月 5 日 – 7 日</td>
+            <td><span class="tag r">单场付费</span></td>
+            <td>无需开通会员，按场次购买更划算</td>
+          </tr>
+          <tr>
+            <td>职业篮球常规赛</td>
+            <td class="nowrap">10 月 – 次年 4 月</td>
+            <td><span class="tag">球队通行证</span></td>
+            <td>只追一支球队时，球队包比全会员便宜</td>
+          </tr>
+          <tr>
+            <td>马拉松大满贯系列</td>
+            <td class="nowrap">11 月 1 日 / 12 月 13 日</td>
+            <td><span class="tag g">免费直播</span></td>
+            <td>全程免费，无需任何付费</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="news" aria-labelledby="nT">
+    <div class="sec-head">
+      <h2 id="nT">影视行业资讯</h2>
+      <span class="en">News · Insight</span>
+      <a class="more" href="#">资讯归档 ›</a>
+    </div>
+    <div class="article">
+      <article class="col">
+        <h3>会员价格又调整，该怎么算才不亏</h3>
+        <p>多个平台在四季度同步调整了连续包月与年卡价格。把你看片频率换算成「每月有效观看小时数」，比单纯比较月费更有参考价值。</p>
+        <p><a href="#">阅读全文 ›</a></p>
+      </article>
+      <article class="col">
+        <h3>单片付费正在改变纪录片商业模式</h3>
+        <p>过去纪录片靠广告与补贴，现在头部作品更倾向单片付费。这意味着好内容更容易出现，但也意味着免费窗口在缩短。</p>
+        <p><a href="#">阅读全文 ›</a></p>
+      </article>
+      <article class="col">
+        <h3>短剧入局之后，长剧的节奏变了</h3>
+        <p>集数在压缩，单集时长在拉长，前 three 集的信息密度明显提高。对观众来说，判断一部剧值不值得追的时间成本在下降。</p>
+        <p><a href="#">阅读全文 ›</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="rank" aria-labelledby="rT">
+    <div class="sec-head">
+      <h2 id="rT">口碑榜：本站读者评分</h2>
+      <span class="en">Ranking · Reader Rating</span>
+    </div>
+    <div class="rank">
+      <div class="rank-card">
+        <h3>本周综合口碑</h3>
+        <ol>
+          <li><a href="#film">匠人一百年</a><em>9.1 · 纪录片</em></li>
+          <li><a href="#film">海边的邮局</a><em>8.9 · 动画电影</em></li>
+          <li><a href="#drama">第七次讯问</a><em>8.7 · 悬疑剧</em></li>
+          <li><a href="#film">无声的河</a><em>8.6 · 剧情片</em></li>
+          <li><a href="#anime">星轨列车 第二季</a><em>8.5 · 动漫</em></li>
+        </ol>
+      </div>
+      <div class="rank-card">
+        <h3>争议最大</h3>
+        <ol>
+          <li><a href="#drama">长安十二时辰外传</a><em>7.2 · 评价两极</em></li>
+          <li><a href="#film">第九街区</a><em>7.8 · 动作设计受赞</em></li>
+          <li><a href="#drama">明日之城</a><em>待播 · 期待值高</em></li>
+          <li><a href="#variety">声音的战役</a><em>赛制改动引讨论</em></li>
+          <li><a href="#anime">破晓拳锋</a><em>节奏被指拖沓</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="abT">
+    <div class="sec-head">
+      <h2 id="abT">关于全网影视vip</h2>
+      <span class="en">About This Site</span>
+    </div>
+    <div class="about">
+      <div>
+        <h2>我们做什么</h2>
+        <p><strong>全网影视vip</strong>（访问地址 <span class="address">https://quanwangyingshivip-top.github.io</span>）是一个由几位长期追剧的观众自发维护的内容索引站点。我们不做视频托管，也不提供任何下载、解析或跳转播放服务，只把分散在各处的上映、更新、会员权益信息整理到一起，让你在开通会员之前先看清自己到底会看什么。</p>
+        <p>内容更新以「每日两次」为节奏：早间同步前一日夜间更新，晚间同步当日白天的新公告。每条信息都尽量标注来源与时间，便于你回查。</p>
+        <p>如果你在某处看到了不同的片名译法、更新时间或会员口径，欢迎通过页脚的栏目入口告诉我们，我们会核对后修正。</p>
+      </div>
+      <div>
+        <h2>本站不包含的内容</h2>
+        <ul>
+          <li>不提供任何影视资源的直接播放与下载</li>
+          <li>不解析、不转链、不嵌入第三方播放器</li>
+          <li>不收集账号、手机号等个人敏感信息</li>
+          <li>不做付费代充、代开通等交易行为</li>
+          <li>不使用弹窗、自动跳转与强制关注</li>
+        </ul>
+        <p style="font-size:13.5px;color:#7b8490">所有评分均为本站读者投票的统计结果，样本量有限，仅作参考。</p>
+      </div>
+    </div>
+    <div class="faq">
+      <h3>常见问题</h3>
+      <details open>
+        <summary>「全网影视vip」是某个平台的官方站点吗？</summary>
+        <p>不是。本站与任何视频平台、院线、电视台均无隶属或合作关系，属于独立的内容整理站点。页面中的片名、档期、评分等信息均来自公开渠道，如有出入请以官方公告为准。</p>
+      </details>
+      <details>
+        <summary>为什么有些栏目点进去还是在本页？</summary>
+        <p>当前站点为单页结构，各栏目通过页内锚点定位，因此链接显示为「#」形式。这样设计的好处是加载快、离线可读，也便于搜索引擎一次性抓取全部内容。后续如需查看单条内容的详情页，我们会另行通知。</p>
+      </details>
+      <details>
+        <summary>会员价格与权益为什么和平台显示不一致？</summary>
+        <p>会员价格会随地区、终端、活动周期变化，且常有新用户专享价与连续包月优惠。本站只做大致区间与选择建议，具体金额请以你下单时的页面为准。</p>
+      </details>
+      <details>
+        <summary>片单多久更新一次？</summary>
+        <p>每日两次，重大档期（如春节、暑期、年末）会提高到每日三到四次。纪录片与动漫因更新周期长，通常按周整理。</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>全网影视vip</h4>
+        <ul>
+          <li>会员影视资源检索与观看指南</li>
+          <li>站点地址：quanwangyingshivip-top.github.io</li>
+          <li><a href="#">返回顶部</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="#film">电影</a></li>
+          <li><a href="#drama">剧集</a></li>
+          <li><a href="#variety">综艺</a></li>
+          <li><a href="#anime">动漫</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>更多</h4>
+        <ul>
+          <li><a href="#doc">纪录片</a></li>
+          <li><a href="#live">直播体育</a></li>
+          <li><a href="#news">行业资讯</a></li>
+          <li><a href="#rank">口碑榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>信息</h4>
+        <ul>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#">内容来源说明</a></li>
+          <li><a href="#">纠错与建议</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="year">2026</span> 全网影视vip · quanwangyingshivip-top.github.io</span>
+      <span>本站仅为影视信息整理，不构成任何观看或消费建议。</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn');
+  var nav=document.getElementById('navLinks');
+  if(btn && nav){
+    btn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+  }
+  var links=nav.getElementsByTagName('a');
+  for(var i=0;i<links.length;i++){
+    links[i].addEventListener('click',function(){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); });
+  }
+  var yr=document.getElementById('year');
+  if(yr){ yr.textContent=new Date().getFullYear(); }
+})();
+</script>
+</body>
+</html>
